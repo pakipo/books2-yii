@@ -4,7 +4,7 @@
 
 Входные точки:
 
-- `frontend` — публичный сайт, пока заглушка Yii. Позже сюда встанет SPA, сборка в `frontend/dist`.
+- `frontend` — публичный сайт на Angular. Сборка пишет файлы в `frontend/web`, их отдаёт nginx.
 - `backend` — админка.
 - `api` — JSON для фронта. Корень отвечает `{"status":"ok"}`.
 - `common` — общие модели.
@@ -22,3 +22,11 @@ php yii migrate
 ```
 
 Сайты после этого: `http://books.local`, `http://api.books.local`, `http://admin.books.local`.
+
+Публичный сайт собирается отдельно:
+
+```bash
+cd frontend
+npm install
+npm run build
+```

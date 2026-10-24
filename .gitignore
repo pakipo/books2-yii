@@ -47,6 +47,8 @@ phpunit.phar
 /api/web/index.php
 /api/web/robots.txt
 /frontend/dist/
+/frontend/node_modules/
+/frontend/.angular/
 
 # local config copied by init
 /common/config/main-local.php
